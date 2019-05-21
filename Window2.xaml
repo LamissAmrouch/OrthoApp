@@ -1,0 +1,448 @@
+﻿<Window x:Class="WpfApplication5.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication5"
+        mc:Ignorable="d"
+        Title="Window2" Background="#FF125065" Height="650" Width="1100" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None" Opacity="0.915">
+    <Window.Resources>
+        <ControlTemplate x:Key="ButtonControlTemplate5" TargetType="{x:Type Button}">
+            <Grid>
+                <Rectangle Fill="#FFEACB3F" Margin="-135,0,0,10" RadiusY="15.5" RadiusX="15.5" Stroke="Black" RenderTransformOrigin="-0.689,-0.909" HorizontalAlignment="Left" Width="61"/>
+                <TextBlock x:Name="textBlock" Margin="-121,-9,0,19" TextWrapping="Wrap" Text="ت" FontSize="36" HorizontalAlignment="Left" Width="37"/>
+                <Rectangle Fill="#FFEACB3F" Margin="0,0,-46,10" RadiusY="15.5" RadiusX="15.5" Stroke="Black" RenderTransformOrigin="-0.689,-0.909" HorizontalAlignment="Right" Width="61"/>
+            </Grid>
+        </ControlTemplate>
+        <ControlTemplate x:Key="ButtonControlTemplate6" TargetType="{x:Type Button}">
+            <Grid>
+                <Rectangle Fill="#FFEEC925" Margin="10,0" RadiusY="16.5" RadiusX="16.5" Stroke="Black"/>
+                <TextBlock x:Name="textBlock" Margin="24.5,1.5,8.5,8.5" TextWrapping="Wrap" FontSize="36" Foreground="#FFFFFBFB"><Run FlowDirection="RightToLeft" Text="ت"/></TextBlock>
+            </Grid>
+        </ControlTemplate>
+        <ControlTemplate x:Key="ButtonControlTemplate1" TargetType="{x:Type Button}">
+            <Grid>
+                <Rectangle Fill="#FFE74C3C" Margin="10,0" RadiusY="16.5" RadiusX="16.5" Stroke="Black"/>
+                <TextBlock x:Name="textBlock" Margin="36.5,7.5,-3.5,2.5" TextWrapping="Wrap" FontSize="36" Foreground="#FFFFFBFB"><Run FlowDirection="RightToLeft" Text="أ"/></TextBlock>
+            </Grid>
+        </ControlTemplate>
+        <ControlTemplate x:Key="ButtonControlTemplate2" TargetType="{x:Type Button}">
+            <Grid>
+                <Rectangle Fill="#FF1EBAB7" Margin="10,0" RadiusY="16.5" RadiusX="16.5" Stroke="Black"/>
+                <TextBlock x:Name="textBlock" Margin="26,1.5,7,8.5" TextWrapping="Wrap" FontSize="36" Foreground="#FFFFFBFB" FontFamily="El Messiri"><Run FlowDirection="RightToLeft" Text="ب"/></TextBlock>
+            </Grid>
+        </ControlTemplate>
+        <ControlTemplate x:Key="ButtonControlTemplate3" TargetType="{x:Type Button}">
+            <Grid>
+                <Image x:Name="Images_retour_png" Margin="12,14.397,46.5,11.5" Source="Images/retour.png" Stretch="Fill"/>
+            </Grid>
+        </ControlTemplate>
+        <ControlTemplate x:Key="ButtonControlTemplate4" TargetType="{x:Type Button}">
+            <Grid>
+                <Rectangle Fill="#FFBF6425" Margin="10,0" RadiusY="16.5" RadiusX="16.5" Stroke="Black"/>
+                <TextBlock x:Name="textBlock" Margin="26,1.5,7,8.5" TextWrapping="Wrap" FontSize="36" Foreground="#FFFFFBFB"><Run FlowDirection="RightToLeft" Text="ث"/></TextBlock>
+            </Grid>
+        </ControlTemplate>
+        <ControlTemplate x:Key="ButtonControlTemplate7" TargetType="{x:Type Button}">
+            <Grid>
+                <Rectangle Fill="#FFC35A5A" Margin="10,0" RadiusY="16.5" RadiusX="16.5" Stroke="Black"/>
+                <TextBlock x:Name="textBlock" Margin="29,-1.5,4,11.5" TextWrapping="Wrap" FontSize="36" Foreground="#FFFFFBFB"><Run FlowDirection="RightToLeft" Text="ج"/></TextBlock>
+            </Grid>
+        </ControlTemplate>
+        <ControlTemplate x:Key="ButtonControlTemplate8" TargetType="{x:Type Button}">
+            <Grid>
+                <Rectangle Fill="#FF149B0D" Margin="10,0" RadiusY="16.5" RadiusX="16.5" Stroke="Black"/>
+                <TextBlock x:Name="textBlock" Margin="27.5,1.5,5.5,8.5" TextWrapping="Wrap" FontSize="36" Foreground="#FFFFFBFB"><Run FlowDirection="RightToLeft" Text="ح"/></TextBlock>
+            </Grid>
+        </ControlTemplate>
+        <ControlTemplate x:Key="ButtonControlTemplate9" TargetType="{x:Type Button}">
+            <Grid>
+                <Rectangle Fill="#FF99324E" Margin="10,0" RadiusY="16.5" RadiusX="16.5" Stroke="Black"/>
+                <TextBlock x:Name="textBlock" Margin="27.5,0,5.5,10" TextWrapping="Wrap" FontSize="36" Foreground="#FFFFFBFB"><Run FlowDirection="RightToLeft" Text="خ"/></TextBlock>
+            </Grid>
+        </ControlTemplate>
+        <ControlTemplate x:Key="ButtonControlTemplate11" TargetType="{x:Type Button}">
+            <Grid>
+                <Rectangle Fill="#FF439AE2" Margin="10,0" RadiusY="16.5" RadiusX="16.5" Stroke="Black"/>
+                <TextBlock x:Name="textBlock" Margin="30.5,0,2.5,10" TextWrapping="Wrap" FontSize="36" Foreground="#FFFFFBFB"><Run FlowDirection="RightToLeft" Text="د"/></TextBlock>
+            </Grid>
+        </ControlTemplate>
+        <ControlTemplate x:Key="ButtonControlTemplate12" TargetType="{x:Type Button}">
+            <Grid Margin="0,0,0,-16.5">
+                <Rectangle Fill="#FF149B0D" Margin="10,0,10,10" RadiusY="16.5" RadiusX="16.5" Stroke="Black"/>
+                <TextBlock x:Name="textBlock" Margin="32.5,4.5,3,-27" TextWrapping="Wrap" FontSize="36" Foreground="#FFFFFBFB"><Run FlowDirection="RightToLeft" Text="ذ"/></TextBlock>
+            </Grid>
+        </ControlTemplate>
+        <ControlTemplate x:Key="ButtonControlTemplate13" TargetType="{x:Type Button}">
+            <Grid>
+                <Rectangle Fill="#FFEFA730" Margin="10,0" RadiusY="16.5" RadiusX="16.5" Stroke="Black"/>
+                <TextBlock x:Name="textBlock" Margin="36,0,-3,10" TextWrapping="Wrap" FontSize="36" Foreground="#FFFFFBFB"><Run FlowDirection="RightToLeft" Text="ر"/></TextBlock>
+            </Grid>
+        </ControlTemplate>
+        <ControlTemplate x:Key="ButtonControlTemplate14" TargetType="{x:Type Button}">
+            <Grid>
+                <Rectangle Fill="#FFC35A5A" Margin="10,0" RadiusY="16.5" RadiusX="16.5" Stroke="Black"/>
+                <TextBlock x:Name="textBlock" Margin="35,1.5,-2,8.5" TextWrapping="Wrap" FontSize="36" Foreground="#FFFFFBFB"><Run FlowDirection="RightToLeft" Text="ز"/></TextBlock>
+            </Grid>
+        </ControlTemplate>
+        <ControlTemplate x:Key="ButtonControlTemplate15" TargetType="{x:Type Button}">
+            <Grid>
+                <Rectangle Fill="#FFE74C3C" Margin="10,0" RadiusY="16.5" RadiusX="16.5" Stroke="Black"/>
+                <TextBlock x:Name="textBlock" Margin="18.5,2.5,14.5,-7.5" TextWrapping="Wrap" FontSize="36" Foreground="#FFFFFBFB"><Run FlowDirection="RightToLeft" Text="س"/></TextBlock>
+            </Grid>
+        </ControlTemplate>
+        <ControlTemplate x:Key="ButtonControlTemplate16" TargetType="{x:Type Button}">
+            <Grid>
+                <Rectangle Fill="#FF1EBAB7" Margin="10,0" RadiusY="16.5" RadiusX="16.5" Stroke="Black"/>
+                <TextBlock x:Name="textBlock" Margin="16,2,17,8" TextWrapping="Wrap" FontSize="36" Foreground="#FFFFFBFB"><Run FlowDirection="RightToLeft" Text="ش"/></TextBlock>
+            </Grid>
+        </ControlTemplate>
+        <ControlTemplate x:Key="ButtonControlTemplate17" TargetType="{x:Type Button}">
+            <Grid>
+                <Rectangle Fill="#FFEEC925" Margin="10,0" RadiusY="16.5" RadiusX="16.5" Stroke="Black"/>
+                <TextBlock x:Name="textBlock" Margin="19,0,14,0" TextWrapping="Wrap" FontSize="36" Foreground="#FFFFFBFB"><Run FlowDirection="RightToLeft" Text="ص"/></TextBlock>
+            </Grid>
+        </ControlTemplate>
+        <ControlTemplate x:Key="ButtonControlTemplate18" TargetType="{x:Type Button}">
+            <Grid>
+                <Rectangle Fill="#FFBF6425" Margin="10,0" RadiusY="16.5" RadiusX="16.5" Stroke="Black"/>
+                <TextBlock x:Name="textBlock" Margin="20,-1,13,-2" TextWrapping="Wrap" FontSize="36" Foreground="#FFFFFBFB"><Run FlowDirection="RightToLeft" Text="ض"/></TextBlock>
+            </Grid>
+        </ControlTemplate>
+        <ControlTemplate x:Key="ButtonControlTemplate19" TargetType="{x:Type Button}">
+            <Grid>
+                <Rectangle Fill="#FF1ABC9C" Margin="10,0" RadiusY="16.5" RadiusX="16.5" Stroke="Black"/>
+                <TextBlock x:Name="textBlock" Margin="27.5,3,5.5,7" TextWrapping="Wrap" FontSize="36" Foreground="#FFFFFBFB"><Run FlowDirection="RightToLeft" Text="ط"/></TextBlock>
+            </Grid>
+        </ControlTemplate>
+        <ControlTemplate x:Key="ButtonControlTemplate20" TargetType="{x:Type Button}">
+            <Grid>
+                <Rectangle Fill="#FF1EBAB7" Margin="10,0" RadiusY="16.5" RadiusX="16.5" Stroke="Black"/>
+                <TextBlock x:Name="textBlock" Margin="27.5,3,5.5,7" TextWrapping="Wrap" FontSize="36" Foreground="#FFFFFBFB"><Run FlowDirection="RightToLeft" Text="ظ"/></TextBlock>
+            </Grid>
+        </ControlTemplate>
+        <ControlTemplate x:Key="ButtonControlTemplate21" TargetType="{x:Type Button}">
+            <Grid>
+                <Rectangle Fill="#FFEE7725" Margin="10,0" RadiusY="16.5" RadiusX="16.5" Stroke="Black"/>
+                <TextBlock x:Name="textBlock" Margin="0,0,2.5,10" TextWrapping="Wrap" FontSize="36" Foreground="#FFFFFBFB" HorizontalAlignment="Right" Width="52"><Run FlowDirection="RightToLeft" Text="ع"/></TextBlock>
+            </Grid>
+        </ControlTemplate>
+        <ControlTemplate x:Key="ButtonControlTemplate22" TargetType="{x:Type Button}">
+            <Grid>
+                <Rectangle Fill="#FFE74C3C" Margin="10,0" RadiusY="16.5" RadiusX="16.5" Stroke="Black"/>
+                <TextBlock x:Name="textBlock" Margin="30.5,1.5,2.5,8.5" TextWrapping="Wrap" FontSize="36" Foreground="#FFFFFBFB"><Run FlowDirection="RightToLeft" Text="غ"/></TextBlock>
+            </Grid>
+        </ControlTemplate>
+        <ControlTemplate x:Key="ButtonControlTemplate23" TargetType="{x:Type Button}">
+            <Grid>
+                <Rectangle Fill="#FFCB8947" Margin="10,0" RadiusY="16.5" RadiusX="16.5" Stroke="Black"/>
+                <TextBlock x:Name="textBlock" Margin="23,3,10,7" TextWrapping="Wrap" FontSize="36" Foreground="#FFFFFBFB"><Run FlowDirection="RightToLeft" Text="ف"/></TextBlock>
+            </Grid>
+        </ControlTemplate>
+        <ControlTemplate x:Key="ButtonControlTemplate24" TargetType="{x:Type Button}">
+            <Grid>
+                <Rectangle Fill="#FF1ABC9C" Margin="10,0" RadiusY="16.5" RadiusX="16.5" Stroke="Black"/>
+                <TextBlock x:Name="textBlock" Margin="23,1.5,10,8.5" TextWrapping="Wrap" FontSize="36" Foreground="#FFFFFBFB"><Run FlowDirection="RightToLeft" Text="ق"/></TextBlock>
+            </Grid>
+        </ControlTemplate>
+        <ControlTemplate x:Key="ButtonControlTemplate25" TargetType="{x:Type Button}">
+            <Grid>
+                <Rectangle Fill="#FF99324E" Margin="10,0" RadiusY="16.5" RadiusX="16.5" Stroke="Black"/>
+                <TextBlock x:Name="textBlock" Margin="26,3,7,7" TextWrapping="Wrap" FontSize="36" Foreground="#FFFFFBFB"><Run FlowDirection="RightToLeft" Text="ك"/></TextBlock>
+            </Grid>
+        </ControlTemplate>
+        <ControlTemplate x:Key="ButtonControlTemplate26" TargetType="{x:Type Button}">
+            <Grid>
+                <Rectangle Fill="#FF93C35A" Margin="10,0" RadiusY="16.5" RadiusX="16.5" Stroke="Black"/>
+                <TextBlock x:Name="textBlock" Margin="26,1.5,7,-1.5" TextWrapping="Wrap" FontSize="36" Foreground="#FFFFFBFB"><Run FlowDirection="RightToLeft" Text="ل"/></TextBlock>
+            </Grid>
+        </ControlTemplate>
+        <ControlTemplate x:Key="ButtonControlTemplate27" TargetType="{x:Type Button}">
+            <Grid>
+                <Rectangle Fill="#FF149B0D" Margin="10,0" RadiusY="16.5" RadiusX="16.5" Stroke="Black"/>
+                <TextBlock x:Name="textBlock" Margin="27.5,-3.5,5.5,8.5" TextWrapping="Wrap" FontSize="36" Foreground="#FFFFFBFB"><Run FlowDirection="RightToLeft" Text="م"/></TextBlock>
+            </Grid>
+        </ControlTemplate>
+        <ControlTemplate x:Key="ButtonControlTemplate28" TargetType="{x:Type Button}">
+            <Grid>
+                <Rectangle Fill="#FFEFA730" Margin="10,0" RadiusY="16.5" RadiusX="16.5" Stroke="Black"/>
+                <TextBlock x:Name="textBlock" Margin="27.5,0,5.5,10" TextWrapping="Wrap" FontSize="36" Foreground="#FFFFFBFB"><Run FlowDirection="RightToLeft" Text="ن"/></TextBlock>
+            </Grid>
+        </ControlTemplate>
+        <ControlTemplate x:Key="ButtonControlTemplate29" TargetType="{x:Type Button}">
+            <Grid>
+                <Rectangle Fill="#FF93C35A" Margin="10,0" RadiusY="16.5" RadiusX="16.5" Stroke="Black"/>
+                <TextBlock x:Name="textBlock" Margin="31.5,1.5,1.5,8.5" TextWrapping="Wrap" FontSize="36" Foreground="#FFFFFBFB"><Run FlowDirection="RightToLeft" Text="ه"/></TextBlock>
+            </Grid>
+        </ControlTemplate>
+        <ControlTemplate x:Key="ButtonControlTemplate30" TargetType="{x:Type Button}">
+            <Grid>
+                <Rectangle Fill="#FFC35A5A" Margin="10,0" RadiusY="16.5" RadiusX="16.5" Stroke="Black"/>
+                <TextBlock x:Name="textBlock" Margin="32,0,1,10" TextWrapping="Wrap" FontSize="36" Foreground="#FFFFFBFB"><Run FlowDirection="RightToLeft" Text="و"/></TextBlock>
+            </Grid>
+        </ControlTemplate>
+        <ControlTemplate x:Key="ButtonControlTemplate31" TargetType="{x:Type Button}">
+            <Grid>
+                <Rectangle Fill="#FFE74C3C" Margin="10,0" RadiusY="16.5" RadiusX="16.5" Stroke="Black"/>
+                <TextBlock x:Name="textBlock" Margin="24.5,-4,8.5,0" TextWrapping="Wrap" FontSize="36" Foreground="#FFFFFBFB"><Run FlowDirection="RightToLeft" Text="ي"/></TextBlock>
+            </Grid>
+        </ControlTemplate>
+        <ControlTemplate x:Key="ButtonControlTemplate32" TargetType="{x:Type Button}">
+            <Grid>
+                <Rectangle Fill="#FF1EBAB7" Margin="10,0" RadiusY="16.5" RadiusX="16.5" Stroke="Black"/>
+                <TextBlock x:Name="textBlock" Margin="31,-1,2,11" TextWrapping="Wrap" FontSize="36" Foreground="#FFFFFBFB"><Run FlowDirection="RightToLeft" Text="ء"/></TextBlock>
+            </Grid>
+        </ControlTemplate>
+        <ControlTemplate x:Key="ButtonControlTemplate33" TargetType="{x:Type Button}">
+            <Grid>
+                <Rectangle Fill="#FFEE7725" Margin="10,0" RadiusY="16.5" RadiusX="16.5" Stroke="Black"/>
+                <TextBlock x:Name="textBlock" Margin="30,4,3,6" TextWrapping="Wrap" FontSize="36" Foreground="#FFFFFBFB"><Run FlowDirection="RightToLeft" Text="ة"/></TextBlock>
+            </Grid>
+        </ControlTemplate>
+        <ControlTemplate x:Key="ButtonControlTemplate34" TargetType="{x:Type Button}">
+            <Grid>
+                <Image x:Name="Images_QuitterButtonJaune_png" Margin="10,0" Source="Images/QuitterButtonJaune.png" Stretch="Fill"/>
+            </Grid>
+        </ControlTemplate>
+    </Window.Resources>
+    <Grid Margin="0,4.5,0,-4.5">
+        <TextBlock x:Name="textBlock" Height="110.5" Margin="334,29.5,329,0" TextWrapping="Wrap" VerticalAlignment="Top" FrameworkElement.FlowDirection="RightToLeft" FontFamily="El Messiri" FontSize="72" Foreground="#FFF9FDFB"><Run Foreground="#FF1ABC9C" Text="أ"/><Run Foreground="#FF99324E" Text="ت"/><Run Foreground="#FFE74C3C" Text="ع"/><Run Foreground="#FF149B0D" Text="ل"/><Run Foreground="#FFEFA730" Text="م"/><Span><Run Text=" "/></Span><Run Foreground="#FFC35A5A" FlowDirection="RightToLeft" Text="ح"/><Run Foreground="#FF93C35A" FlowDirection="RightToLeft" Text="ر"/><Run Foreground="#FFEE7725" FlowDirection="RightToLeft" Text="و"/><Run Foreground="#FF1EBAB7" FlowDirection="RightToLeft" Text="ف"/><Run Foreground="#FFCB8947" FlowDirection="RightToLeft" Text="ي"/><Span><Run Text="  "/></Span></TextBlock>
+        <Button x:Name="btn1" Content="Button" HorizontalAlignment="Right" Height="55" Margin="0,248,194.5,0" VerticalAlignment="Top" Width="85" Template="{DynamicResource ButtonControlTemplate1}" FontFamily="El Messiri" FontSize="14" Foreground="#FFFFFBFB" Background="#FF6BBD76" Click="btn1_Click"/>
+        <Button x:Name="btn2" Content="Button" HorizontalAlignment="Right" Height="55" Margin="0,248,278.5,0" VerticalAlignment="Top" Width="85" Template="{DynamicResource ButtonControlTemplate2}" FontFamily="El Messiri" FontSize="14" Foreground="#FFFFFBFB" Click="btn2_Click"/>
+        <Button x:Name="btn5" Content="Button" Height="55" Margin="495.5,248,525.5,0" VerticalAlignment="Top" Template="{DynamicResource ButtonControlTemplate7}" FontFamily="El Messiri" FontSize="14" Foreground="#FFFFFBFB" Width="85" Click="btn5_Click"/>
+        <Button x:Name="btn4" Content="Button" HorizontalAlignment="Right" Height="55" Margin="0,248,446.5,0" VerticalAlignment="Top" Width="85" Template="{DynamicResource ButtonControlTemplate4}" FontFamily="El Messiri" FontSize="14" Foreground="#FFFFFBFB" Background="#FFE25F21" Click="btn4_Click"/>
+        <Button x:Name="btn3" Content="Button" HorizontalAlignment="Right" Height="55" Margin="0,248,362.5,0" VerticalAlignment="Top" Width="85" Template="{DynamicResource ButtonControlTemplate6}" FontFamily="El Messiri" FontSize="14" Foreground="#FFFFFBFB" Click="btn3_Click"/>
+        <Button x:Name="btn11" Content="Button" HorizontalAlignment="Right" Margin="0,316.5,362.5,278.5" Width="85" Template="{DynamicResource ButtonControlTemplate14}" FontFamily="El Messiri" FontSize="14" Foreground="#FFFFFBFB" Click="btn11_Click"/>
+        <Button x:Name="btn10" Content="Button" HorizontalAlignment="Right" Margin="0,313,278.5,275" Width="85" Template="{DynamicResource ButtonControlTemplate13}" FontFamily="El Messiri" FontSize="14" Foreground="#FFFFFBFB" Height="55" Click="btn10_Click"/>
+        <Button x:Name="btn9" Content="Button" HorizontalAlignment="Right" Margin="0,313,194.5,288" Width="85" Template="{DynamicResource ButtonControlTemplate12}" FontFamily="El Messiri" FontSize="14" Foreground="#FFFFFBFB" Click="btn9_Click"/>
+        <Button x:Name="btn8" Content="Button" HorizontalAlignment="Left" Height="55" Margin="248.5,248,0,0" VerticalAlignment="Top" Width="85" Template="{DynamicResource ButtonControlTemplate11}" FontFamily="El Messiri" FontSize="14" Foreground="#FFFFFBFB" Background="#FF439AE2" Click="btn8_Click"/>
+        <Button x:Name="btn7" Content="Button" HorizontalAlignment="Left" Height="55" Margin="332.5,248,0,0" VerticalAlignment="Top" Width="85" Template="{DynamicResource ButtonControlTemplate9}" FontFamily="El Messiri" FontSize="14" Foreground="#FFFFFBFB" Click="btn7_Click"/>
+        <Button x:Name="btn6" Content="Button" HorizontalAlignment="Left" Height="55" Margin="416.5,248,0,0" VerticalAlignment="Top" Width="85" Template="{DynamicResource ButtonControlTemplate8}" FontFamily="El Messiri" FontSize="14" Foreground="#FFFFFBFB" Click="btn6_Click"/>
+        <Button x:Name="btn14" Content="Button" HorizontalAlignment="Left" Margin="416.5,313,0,278.5" Width="85" Template="{DynamicResource ButtonControlTemplate17}" FontFamily="El Messiri" FontSize="14" Foreground="#FFFFFBFB" Click="btn14_Click"/>
+        <Button x:Name="btn13" Content="Button" Margin="495.5,313,519.5,278.5" Template="{DynamicResource ButtonControlTemplate16}" FontFamily="El Messiri" FontSize="14" Foreground="#FFFFFBFB" Width="85" Click="btn13_Click"/>
+        <Button x:Name="btn12" Content="Button" HorizontalAlignment="Right" Margin="0,313,446.5,278.5" Width="85" Template="{DynamicResource ButtonControlTemplate15}" FontFamily="El Messiri" FontSize="14" Foreground="#FFFFFBFB" Click="btn12_Click"/>
+        <Button x:Name="btn16" Content="Button" HorizontalAlignment="Left" Margin="248.5,313,0,278.5" Width="85" Template="{DynamicResource ButtonControlTemplate19}" FontFamily="El Messiri" FontSize="14" Foreground="#FFFFFBFB" Click="btn16_Click"/>
+        <Button x:Name="btn15" Content="Button" HorizontalAlignment="Left" Margin="332.5,313,0,278.5" Width="85" Template="{DynamicResource ButtonControlTemplate18}" FontFamily="El Messiri" FontSize="14" Foreground="#FFFFFBFB" Click="btn15_Click"/>
+        <Button x:Name="btn17" Content="Button" HorizontalAlignment="Right" Margin="0,0,193,210.5" Width="85" Template="{DynamicResource ButtonControlTemplate20}" FontFamily="El Messiri" FontSize="14" Foreground="#FFFFFBFB" Height="55" VerticalAlignment="Bottom" Click="btn17_Click"/>
+        <Button x:Name="btn23" Content="Button" HorizontalAlignment="Left" Margin="333,0,0,210.5" Width="85" Template="{DynamicResource ButtonControlTemplate26}" FontFamily="El Messiri" FontSize="14" Foreground="#FFFFFBFB" Height="55" VerticalAlignment="Bottom" Click="btn23_Click"/>
+        <Button x:Name="btn22" Content="Button" HorizontalAlignment="Left" Margin="412,0,0,210.5" Width="85" Template="{DynamicResource ButtonControlTemplate25}" FontFamily="El Messiri" FontSize="14" Foreground="#FFFFFBFB" Height="55" VerticalAlignment="Bottom" Click="btn22_Click"/>
+        <Button x:Name="btn21" Content="Button" Margin="496,0,519,210.5" Template="{DynamicResource ButtonControlTemplate24}" FontFamily="El Messiri" FontSize="14" Foreground="#FFFFFBFB" Height="55" VerticalAlignment="Bottom" Width="85" Click="btn21_Click"/>
+        <Button x:Name="btn20" Content="Button" HorizontalAlignment="Right" Margin="0,0,445,210.5" Width="85" Template="{DynamicResource ButtonControlTemplate23}" FontFamily="El Messiri" FontSize="14" Foreground="#FFFFFBFB" Height="55" VerticalAlignment="Bottom" Click="btn20_Click"/>
+        <Button x:Name="btn19" Content="Button" HorizontalAlignment="Right" Margin="0,0,361,210.5" Width="85" Template="{DynamicResource ButtonControlTemplate22}" FontFamily="El Messiri" FontSize="14" Foreground="#FFFFFBFB" Height="55" VerticalAlignment="Bottom" Click="btn19_Click"/>
+        <Button x:Name="btn18" Content="Button" HorizontalAlignment="Right" Margin="0,0,277,210.5" Width="85" Template="{DynamicResource ButtonControlTemplate21}" FontFamily="El Messiri" FontSize="14" Foreground="#FFFFFBFB" Height="55" VerticalAlignment="Bottom" Click="btn18_Click"/>
+        <Button x:Name="btn26" Content="Button" HorizontalAlignment="Right" Height="55" Margin="0,0,364.5,145" VerticalAlignment="Bottom" Width="85" Template="{DynamicResource ButtonControlTemplate29}" FontFamily="El Messiri" FontSize="14" Foreground="#FFFFFBFB" Click="btn26_Click"/>
+        <Button x:Name="btn24" Content="Button" HorizontalAlignment="Left" Margin="249,0,0,210.5" Width="85" Template="{DynamicResource ButtonControlTemplate27}" RenderTransformOrigin="0.38,0.98" FontFamily="El Messiri" FontSize="14" Foreground="#FFFFFBFB" Height="55" VerticalAlignment="Bottom" Click="btn24_Click"/>
+        <Button x:Name="btn30" Content="Button" HorizontalAlignment="Left" Height="55" Margin="331.5,0,0,145" VerticalAlignment="Bottom" Width="85" Template="{DynamicResource ButtonControlTemplate33}" FontFamily="El Messiri" FontSize="14" Foreground="#FFFFFBFB" Click="btn30_Click"/>
+        <Button x:Name="btn29" Content="Button" HorizontalAlignment="Left" Height="55" Margin="410.5,0,0,145" VerticalAlignment="Bottom" Width="85" Template="{DynamicResource ButtonControlTemplate32}" FontFamily="El Messiri" FontSize="14" Foreground="#FFFFFBFB" Click="btn29_Click"/>
+        <Button x:Name="btn28" Content="Button" Height="55" Margin="494.5,0,520.5,145" VerticalAlignment="Bottom" Template="{DynamicResource ButtonControlTemplate31}" FontFamily="El Messiri" FontSize="14" Foreground="#FFFFFBFB" Width="85" Click="btn28_Click"/>
+        <Button x:Name="btn27" Content="Button" HorizontalAlignment="Right" Height="55" Margin="0,0,446.5,145" VerticalAlignment="Bottom" Width="85" Template="{DynamicResource ButtonControlTemplate30}" FontFamily="El Messiri" FontSize="14" Foreground="#FFFFFBFB" Click="btn27_Click"/>
+        <Button x:Name="btn25" Content="Button" HorizontalAlignment="Right" Height="55" Margin="0,0,278.5,145" VerticalAlignment="Bottom" Width="85" Template="{DynamicResource ButtonControlTemplate28}" FontFamily="El Messiri" FontSize="14" Foreground="#FFFFFBFB" Click="btn25_Click"/>
+        <Button x:Name="Retour" Content="Button" HorizontalAlignment="Left" Height="97.5" Margin="10.5,0,0,12.5" VerticalAlignment="Bottom" Width="148.5" Template="{DynamicResource ButtonControlTemplate3}" Click="retour" ToolTip="رجوع"/>
+        <Button x:Name="ExitButton" Content="Button" HorizontalAlignment="Right" Margin="0,6.5,0,0" Width="77" Template="{DynamicResource ButtonControlTemplate34}" Click="ExitButton_Click" ToolTip="خروج" Height="50" VerticalAlignment="Top"/>
+        <Image x:Name="Images_tree_png" HorizontalAlignment="Left" Height="193.496" Margin="11.053,30.052,0,0" Source="Images/tree.png" Stretch="Fill" VerticalAlignment="Top" Width="220.489" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="360.141"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+
+        <MediaElement
+            Name="MyMediaElement"
+            LoadedBehavior="Manual"
+            Source="AA.mp3" Margin="0,74,29,0" HorizontalAlignment="Right" Width="36" Height="39" VerticalAlignment="Top"></MediaElement>
+
+        <MediaElement 
+            
+            Name="A"
+            LoadedBehavior="Manual"
+            Source="Enregistrer001.mp3" Margin="0,6.5,179,0" HorizontalAlignment="Right" Width="36" Height="39" VerticalAlignment="Top"/>
+
+        <MediaElement 
+            
+            Name="B"
+            LoadedBehavior="Manual"
+            Source="Enregistrer002.mp3" Margin="0,6.5,179,0" HorizontalAlignment="Right" Width="36" Height="39" VerticalAlignment="Top"/>
+
+        <MediaElement 
+            
+            Name="T"
+            LoadedBehavior="Manual"
+            Source="Enregistrer003.mp3" Margin="0,6.5,179,0" HorizontalAlignment="Right" Width="36" Height="39" VerticalAlignment="Top"/>
+
+        <MediaElement 
+            
+            Name="TT"
+            LoadedBehavior="Manual"
+            Source="Enregistrer004.mp3" Margin="0,6.5,179,0" HorizontalAlignment="Right" Width="36" Height="39" VerticalAlignment="Top"/>
+
+        <MediaElement 
+            
+            Name="j"
+            LoadedBehavior="Manual"
+            Source="Enregistrer005.mp3" Margin="0,6.5,179,0" HorizontalAlignment="Right" Width="36" Height="39" VerticalAlignment="Top"/>
+
+        <MediaElement 
+            
+            Name="h"
+            LoadedBehavior="Manual"
+            Source="Enregistrer006.mp3" Margin="0,6.5,179,0" HorizontalAlignment="Right" Width="36" Height="39" VerticalAlignment="Top"/>
+
+
+        <MediaElement 
+            
+            Name="kh"
+            LoadedBehavior="Manual"
+            Source="Enregistrer007.mp3" Margin="0,6.5,179,0" HorizontalAlignment="Right" Width="36" Height="39" VerticalAlignment="Top"/>
+
+        <MediaElement 
+            
+            Name="d"
+            LoadedBehavior="Manual"
+            Source="Enregistrer008.mp3" Margin="0,6.5,179,0" HorizontalAlignment="Right" Width="36" Height="39" VerticalAlignment="Top"/>
+
+        <MediaElement 
+            
+            Name="dd"
+            LoadedBehavior="Manual"
+            Source="Enregistrer009.mp3" Margin="0,6.5,179,0" HorizontalAlignment="Right" Width="36" Height="39" VerticalAlignment="Top"/>
+
+
+        <MediaElement 
+            
+            Name="r"
+            LoadedBehavior="Manual"
+            Source="Enregistrer010.mp3" Margin="0,6.5,179,0" HorizontalAlignment="Right" Width="36" Height="39" VerticalAlignment="Top"/>
+
+
+        <MediaElement 
+            
+            Name="z"
+            LoadedBehavior="Manual"
+            Source="Enregistrer011.mp3" Margin="0,6.5,179,0" HorizontalAlignment="Right" Width="36" Height="39" VerticalAlignment="Top"/>
+
+
+        <MediaElement 
+            
+            Name="s"
+            LoadedBehavior="Manual"
+            Source="Enregistrer012.mp3" Margin="0,6.5,179,0" HorizontalAlignment="Right" Width="36" Height="39" VerticalAlignment="Top"/>
+
+
+        <MediaElement 
+            
+            Name="ch"
+            LoadedBehavior="Manual"
+            Source="Enregistrer013.mp3" Margin="0,6.5,179,0" HorizontalAlignment="Right" Width="36" Height="39" VerticalAlignment="Top"/>
+
+
+        <MediaElement 
+            
+            Name="sa"
+            LoadedBehavior="Manual"
+            Source="Enregistrer014.mp3" Margin="0,6.5,179,0" HorizontalAlignment="Right" Width="36" Height="39" VerticalAlignment="Top"/>
+
+
+        <MediaElement 
+            
+            Name="dda"
+            LoadedBehavior="Manual"
+            Source="Enregistrer015.mp3" Margin="0,6.5,179,0" HorizontalAlignment="Right" Width="36" Height="39" VerticalAlignment="Top"/>
+
+
+        <MediaElement 
+            
+            Name="tt"
+            LoadedBehavior="Manual"
+            Source="Enregistrer016.mp3" Margin="0,6.5,179,0" HorizontalAlignment="Right" Width="36" Height="39" VerticalAlignment="Top"/>
+
+        <MediaElement 
+            
+            Name="tta"
+            LoadedBehavior="Manual"
+            Source="Enregistrer017.mp3" Margin="0,6.5,179,0" HorizontalAlignment="Right" Width="36" Height="39" VerticalAlignment="Top"/>
+
+        <MediaElement 
+            
+            Name="aa"
+            LoadedBehavior="Manual"
+            Source="Enregistrer018.mp3" Margin="0,6.5,179,0" HorizontalAlignment="Right" Width="36" Height="39" VerticalAlignment="Top"/>
+
+        <MediaElement 
+            
+            Name="gh"
+            LoadedBehavior="Manual"
+            Source="Enregistrer019.mp3" Margin="0,6.5,179,0" HorizontalAlignment="Right" Width="36" Height="39" VerticalAlignment="Top"/>
+        
+
+        <MediaElement 
+            
+            Name="f"
+            LoadedBehavior="Manual"
+            Source="Enregistrer020.mp3" Margin="0,6.5,179,0" HorizontalAlignment="Right" Width="36" Height="39" VerticalAlignment="Top"/>
+
+        <MediaElement 
+            
+            Name="fa"
+            LoadedBehavior="Manual"
+            Source="Enregistrer021.mp3" Margin="0,6.5,179,0" HorizontalAlignment="Right" Width="36" Height="39" VerticalAlignment="Top"/>
+
+        <MediaElement 
+            
+            Name="k"
+            LoadedBehavior="Manual"
+            Source="Enregistrer022.mp3" Margin="0,6.5,179,0" HorizontalAlignment="Right" Width="36" Height="39" VerticalAlignment="Top"/>
+
+        <MediaElement 
+            
+            Name="l"
+            LoadedBehavior="Manual"
+            Source="Enregistrer023.mp3" Margin="0,6.5,179,0" HorizontalAlignment="Right" Width="36" Height="39" VerticalAlignment="Top"/>
+
+        <MediaElement 
+            
+            Name="m"
+            LoadedBehavior="Manual"
+            Source="Enregistrer024.mp3" Margin="0,6.5,179,0" HorizontalAlignment="Right" Width="36" Height="39" VerticalAlignment="Top"/>
+
+        <MediaElement 
+            
+            Name="n"
+            LoadedBehavior="Manual"
+            Source="Enregistrer025.mp3" Margin="0,6.5,179,0" HorizontalAlignment="Right" Width="36" Height="39" VerticalAlignment="Top"/>
+
+        <MediaElement 
+            
+            Name="hha"
+            LoadedBehavior="Manual"
+            Source="Enregistrer026.mp3" Margin="0,6.5,179,0" HorizontalAlignment="Right" Width="36" Height="39" VerticalAlignment="Top"/>
+
+        <MediaElement 
+            
+            Name="w"
+            LoadedBehavior="Manual"
+            Source="Enregistrer027.mp3" Margin="0,6.5,179,0" HorizontalAlignment="Right" Width="36" Height="39" VerticalAlignment="Top"/>
+
+        <MediaElement 
+            
+            Name="y"
+            LoadedBehavior="Manual"
+            Source="Enregistrer028.mp3" Margin="0,6.5,179,0" HorizontalAlignment="Right" Width="36" Height="39" VerticalAlignment="Top"/>
+
+        <MediaElement 
+            
+            Name="hhha"
+            LoadedBehavior="Manual"
+            Source="Enregistrer029.mp3" Margin="0,6.5,179,0" HorizontalAlignment="Right" Width="36" Height="39" VerticalAlignment="Top"/>
+
+        <MediaElement 
+            
+            Name="tttta"
+            LoadedBehavior="Manual"
+            Source="Enregistrer030.mp3" Margin="0,6.5,179,0" HorizontalAlignment="Right" Width="36" Height="39" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
